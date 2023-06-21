@@ -23,7 +23,7 @@ function App() {
         <h3>advice # {advice?.id}</h3>
         <p>{advice?.advice}</p>
         <img src={`${patternDesktop}`} srcSet={`${patternMobile} 375w,${patternDesktop} 1440w`} alt="" />
-        <button className={`dice ${loading ? 'rotating' : ''}`} onClick={adviceGenerator} disabled={loading}>
+        <button type='button' className={`dice ${loading ? 'rotating' : ''}`} onClick={adviceGenerator} disabled={loading}>
           <img src={dice} alt="" />
         </button>
       </div>
