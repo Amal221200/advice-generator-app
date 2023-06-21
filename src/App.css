@@ -35,7 +35,7 @@
 
 .dice {
   position: absolute;
-  bottom: -20%;
+  bottom: -10%;
   margin: auto;
   left: 50%;
   translate: -50%;
@@ -51,8 +51,7 @@
 }
 
 .dice.rotating {
-  cursor: initial;
-  animation: rotate 1.5s infinite ease 1s forwards;
+  animation: rotate 1.5s infinite ease forwards;
 }
 
 @keyframes rotate {

@@ -11,7 +11,6 @@ function App() {
     setLoading(true)
     const data = await (await fetch(`https://api.adviceslip.com/advice`)).json()
     setAdvice(data.slip)
-    console.log(data)
     setLoading(false)
   }
 
@@ -19,7 +18,7 @@ function App() {
     adviceGenerator()
   }, [])
   return (
-    <div className='container'>
+    <main className='container'>
       <div className="box">
         <h3>advice # {advice?.id}</h3>
         <p>{advice?.advice}</p>
@@ -28,7 +27,7 @@ function App() {
           <img src={dice} alt="" />
         </button>
       </div>
-    </div>
+    </main>
   )
 }
 
