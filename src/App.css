@@ -12,7 +12,6 @@
   max-width: 600px;
   position: relative;
   text-align: center;
-  background-color: hsl(217, 19%, 38%);
   background-color:  hsl(217, 19%, 24%);
   padding: 40px;
   border-radius: 5px;
@@ -31,6 +30,7 @@
 
 .box p {
   margin: 10px 0;
+  color: hsl(193, 38%, 86%);
 }
 
 .dice {
@@ -48,6 +48,10 @@
   animation: none;
   outline: none;
   border: none;
+}
+
+.dice:hover{
+  box-shadow: 0 0 30px 5px hsl(150, 100%, 66%);
 }
 
 .dice.rotating {
