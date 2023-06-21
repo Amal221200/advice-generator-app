@@ -21,7 +21,7 @@ function App() {
     <main className='container'>
       <div className="box">
         <h3>advice # {advice?.id}</h3>
-        <p>{advice?.advice}</p>
+        <p>{loading ? "Loading..." : `${advice?.advice}`}</p>
         <img src={`${patternDesktop}`} srcSet={`${patternMobile} 375w,${patternDesktop} 1440w`} alt="" />
         <button type='button' className={`dice ${loading ? 'rotating' : ''}`} onClick={adviceGenerator} disabled={loading}>
           <img src={dice} alt="" />
